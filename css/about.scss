@@ -1,0 +1,14 @@
+.about {background-color: #dddddc;}
+.about__list {display: flex; flex-wrap: wrap;margin-bottom: rem(30px);}
+.about__item {width: 50%;}
+.about__img {max-width: 100%;}
+.about__text {
+  font-size: rem(16px);
+  font-family: 'ubuntu', Arial, Helvetica, sans-serif;
+  color: $black;
+  line-height: 2;
+  font-weight: 500;padding-right: 15px;
+}
+
+.about__text-title {color: $blue;
+}

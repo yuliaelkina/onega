@@ -6,6 +6,8 @@ background-repeat: no-repeat;
 .container__main-page {position: relative;
   height: 100%;
   justify-content: center;
+  flex-direction: column;
+
 }
 .main-page__content {text-align: left;
   flex: 0.95;
@@ -15,5 +17,6 @@ background-repeat: no-repeat;
 font-family: 'montserrat', sans-serif, arial;
 font-size: rem(26px);
 font-weight: 300;
-margin-top: 25px;}
+margin-top: 25px;
+margin-bottom: rem(50px);}
 

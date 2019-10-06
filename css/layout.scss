@@ -16,7 +16,6 @@ html {font-size: 16px;}
   .wrapper {
     width: 100%;
     height: 100%;
-    overflow: hidden;
     font-family: 'ubuntu', sans-serif, Arial, Helvetica, sans-serif;
   font-size: rem(14px);
   font-weight: 300; 
@@ -31,7 +30,7 @@ html {font-size: 16px;}
   }
   a {text-decoration: none;}
   
-  h1, h2, h3 {margin-top: 0;padding-top: 0;margin-bottom: 0;}
+  h1, h2, h3, h4 {margin-top: 0;padding-top: 0;margin-bottom: 0;}
 
   .page {position: relative;
     display: flex;
@@ -45,7 +44,6 @@ html {font-size: 16px;}
 
 .container {margin: 0 auto; display: flex;
     flex-direction: column;
-    justify-content: center;
     width: 95%;
-    max-width: rem(940px);
+    max-width: rem(960px);
   }
