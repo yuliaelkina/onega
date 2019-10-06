@@ -428,11 +428,15 @@ button {
   cursor: pointer; }
 
 .wrapper {
+  position: relative;
   width: 100%;
   height: 100%;
   font-family: 'ubuntu', sans-serif, Arial, Helvetica, sans-serif;
   font-size: 0.875rem;
   font-weight: 300; }
+
+.maincontent {
+  height: 100%; }
 
 ul {
   margin-left: 0;
@@ -465,7 +469,6 @@ h1, h2, h3, h4 {
   justify-content: center;
   width: 100%;
   height: 100%;
-  min-height: 40.625rem;
   z-index: 3; }
 
 .container {
@@ -497,10 +500,7 @@ h1, h2, h3, h4 {
   flex-direction: column; }
 
 .main-page__content {
-  text-align: left;
-  -webkit-box-flex: 0.95;
-  -ms-flex: 0.95;
-  flex: 0.95; }
+  text-align: left; }
 
 .main-page__desc {
   color: #fff;
@@ -522,7 +522,8 @@ h1, h2, h3, h4 {
   padding-left: 1.5625rem;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  z-index: 5; }
 
 .logo__image {
   width: 150px; }
@@ -555,7 +556,7 @@ h1, h2, h3, h4 {
   text-shadow: -4px 6px 5px #2d2f2c; }
 
 .title--section {
-  margin: 2.5rem auto;
+  margin: 2.1875rem auto;
   color: #2e495d;
   font-size: 1.875rem;
   font-weight: 300; }
@@ -566,12 +567,21 @@ h1, h2, h3, h4 {
   border-radius: 5px;
   padding: 9px 35px;
   margin-top: 3.125rem;
-  font-family: 'ubuntu', sans-serif;
+  font-family: 'montserrat', sans-serif;
   font-size: 16px;
   letter-spacing: 2px;
   color: #fff; }
   .button:hover {
     background-color: #273f51; }
+
+.button--popup {
+  margin-top: 20px;
+  width: 90%;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  font-size: 14px;
+  text-align: center; }
 
 .about {
   background-color: #dddddc; }
@@ -580,23 +590,37 @@ h1, h2, h3, h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin-bottom: 1.875rem; }
 
 .about__item {
-  width: 50%; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 50%;
+  margin-right: 15px; }
+  .about__item:last-child {
+    margin-right: 0; }
 
 .about__img {
-  max-width: 100%; }
+  max-width: 90%;
+  max-height: 250px; }
 
 .about__text {
-  font-size: 1rem;
+  font-size: 0.9375rem;
   font-family: 'ubuntu', Arial, Helvetica, sans-serif;
   color: #292726;
-  line-height: 2;
-  font-weight: 500;
-  padding-right: 15px; }
+  line-height: 1.7;
+  font-weight: 300; }
+  @media screen and (max-width: 850px) {
+    .about__text {
+      font-size: 0.875rem; } }
 
 .about__text-title {
   color: #2e495d; }

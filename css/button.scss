@@ -3,8 +3,10 @@ border: #fff 1px solid;
 border-radius: 5px; 
 padding: 9px 35px;
 margin-top: rem(50px);
-font-family: 'ubuntu', sans-serif;
+font-family: 'montserrat', sans-serif;
 font-size: 16px; 
 letter-spacing: 2px; 
 color: #fff;
 &:hover {background-color: #273f51;}}
+
+.button--popup {margin-top: 20px;width: 90%; align-self: center; font-size: 14px; text-align: center;}

@@ -13,13 +13,15 @@ html {font-size: 16px;}
   cursor: pointer;
   }
   
-  .wrapper {
+  .wrapper {position: relative;
     width: 100%;
     height: 100%;
+   // overflow: hidden;
     font-family: 'ubuntu', sans-serif, Arial, Helvetica, sans-serif;
   font-size: rem(14px);
   font-weight: 300; 
   }
+  .maincontent {height: 100%;}
   
   ul {margin-left: 0;
     padding-left: 0;
@@ -38,7 +40,7 @@ html {font-size: 16px;}
     justify-content: center;
     width: 100%;
     height: 100%;
-   min-height: rem(650px);
+//   min-height: rem(640px);
   z-index: 3;
 }
 

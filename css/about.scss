@@ -1,13 +1,19 @@
 .about {background-color: #dddddc;}
-.about__list {display: flex; flex-wrap: wrap;margin-bottom: rem(30px);}
-.about__item {width: 50%;}
-.about__img {max-width: 100%;}
+.about__list {display: flex; justify-content: space-between;
+  margin-bottom: rem(30px);}
+
+.about__item {display: flex; flex-direction: column;
+  width: 50%;margin-right: 15px;
+&:last-child {margin-right: 0;}
+}
+.about__img {max-width: 90%; max-height: 250px;}
 .about__text {
-  font-size: rem(16px);
+  font-size: rem(15px);
   font-family: 'ubuntu', Arial, Helvetica, sans-serif;
   color: $black;
-  line-height: 2;
-  font-weight: 500;padding-right: 15px;
+  line-height: 1.7;
+  font-weight: 300;
+  @include small-width {font-size: rem(14px);}
 }
 
 .about__text-title {color: $blue;
