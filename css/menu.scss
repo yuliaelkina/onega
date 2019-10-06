@@ -1,0 +1,12 @@
+.menu {color: #fff;}
+.menu__list {
+  display: flex;
+}
+.menu__item {margin-right: rem(25px);}
+.menu__link {
+  font-family: 'ubuntu', sans-serif, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color: #fff;
+  font-size: rem(16px);
+ &:hover  {text-decoration: underline;}
+}

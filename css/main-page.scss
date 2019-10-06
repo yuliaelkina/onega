@@ -1,0 +1,19 @@
+.main-page {
+  background-image: url(./images/main_bg.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+.container__main-page {position: relative;
+  height: 100%;
+  justify-content: center;
+}
+.main-page__content {text-align: left;
+  flex: 0.95;
+}
+
+.main-page__desc {color: #fff;
+font-family: 'montserrat', sans-serif, arial;
+font-size: rem(26px);
+font-weight: 300;
+margin-top: 25px;}
+
