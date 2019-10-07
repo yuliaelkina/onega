@@ -34,6 +34,7 @@ items.forEach(function(element){
 
 
   //// ops
+
   let onePageScroll = () =>{
       const wrapper = document.querySelector('.wrapper');
       const content = wrapper.querySelector('.maincontent');
@@ -172,4 +173,21 @@ items.forEach(function(element){
     }
     
     onePageScroll();
+    
+    //yandex map
+
+    ymaps.ready(init);
+    function init(){  
+        var myMap = new ymaps.Map("map", {
+            center: [61.76880286, 34.37170718],
+            zoom: 14,
+        });
+        var placemark = new ymaps.Placemark([61.77, 34.37], {
+        hintContent: '<div class="map__hint">Балтийская улица, 14с2</div>',
+        balloonContent: '<div class="map__text">КСК "Онежская слобода"</div>'
+   });
+
+     myMap.geoObjects.add(placemark);   
+    }
+
     

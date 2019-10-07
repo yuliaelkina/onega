@@ -1,0 +1,15 @@
+.footer {
+  position: absolute;
+  bottom: 0;left: 0;width: 100%;
+  background-color: $green;
+color: #fff;
+}
+.footer__text {margin-left: 20px;padding-top: 15px;padding-bottom: 15px;}
+.footer__contacts {
+  font-size: 13px;
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+.footer__rights {  font-size: 12px;
+  font-weight: 200;
+  opacity: 0.5;}

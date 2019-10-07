@@ -485,6 +485,16 @@ h1, h2, h3, h4 {
   width: 95%;
   max-width: 60rem; }
 
+.container--map {
+  width: 50%;
+  height: 90%;
+  margin-bottom: 50px; }
+  @media screen and (max-width: 480px) {
+    .container--map {
+      width: 100%;
+      height: 190px;
+      margin-bottom: 20px; } }
+
 .main-page {
   background-image: url(./images/main_bg.jpg);
   background-size: cover;
@@ -664,7 +674,7 @@ h1, h2, h3, h4 {
   @media screen and (max-width: 480px) {
     .title--section {
       font-size: 20px;
-      margin: 1.5625rem auto; } }
+      margin: 1.25rem auto; } }
 
 .title--white {
   color: #fff; }
@@ -785,6 +795,69 @@ h1, h2, h3, h4 {
 
 .contacts {
   background-color: #dddddc; }
+
+.contacts__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 80%;
+  margin-bottom: 50px; }
+  @media screen and (max-width: 480px) {
+    .contacts__content {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
+
+.contacts__text {
+  font-family: 'ubuntu', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #1f2620;
+  margin-right: 40px; }
+  @media screen and (max-width: 480px) {
+    .contacts__text {
+      font-size: 14px;
+      margin-right: 0; } }
+
+.contacts__time {
+  line-height: 1.5;
+  color: #2e495d;
+  font-weight: 500;
+  margin-bottom: 15px; }
+
+.contacts__text-bold {
+  margin-top: 10px;
+  font-weight: 500;
+  line-height: 1.5; }
+
+@media screen and (max-width: 480px) {
+  .contacts__text-bold--hid {
+    display: none; } }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #272c26;
+  color: #fff; }
+
+.footer__text {
+  margin-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
+.footer__contacts {
+  font-size: 13px;
+  font-weight: 200;
+  margin-bottom: 10px; }
+
+.footer__rights {
+  font-size: 12px;
+  font-weight: 200;
+  opacity: 0.5; }
 
 .pagination {
   position: fixed;

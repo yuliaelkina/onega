@@ -49,3 +49,7 @@ min-height: rem(640px);
     width: 95%;
     max-width: rem(960px);
   }
+.container--map {width: 50%; 
+  height: 90%; margin-bottom: 50px;
+  @include phones {width: 100%; height: 190px; margin-bottom: 20px}
+}
