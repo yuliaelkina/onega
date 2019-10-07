@@ -4,9 +4,15 @@ font-weight: 500;
 font-size: rem(80px);
 line-height: 0.89;
 text-shadow: -4px 6px 5px #2d2f2c;
+@include phones {font-size: 60px;}
 }
 
 .title--section {margin: rem(35px) auto;
   color: $blue;
   font-size: rem(30px);
-font-weight: 500;}
+font-weight: 500;
+@include phones {font-size: 20px;
+  margin: rem(25px) auto}}
+
+
+  .title--white {color: #fff;}

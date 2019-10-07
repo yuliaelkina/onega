@@ -1,4 +1,5 @@
 .menu {color: #fff;
+  @include phones {display: none;}
 }
 .menu__list {
   display: flex;

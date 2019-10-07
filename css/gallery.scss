@@ -1,3 +1,24 @@
 .gallery {
   background: linear-gradient(30deg, #48504d, #3d433d);
 }
+.gallery__list {display: flex; 
+  justify-content: space-between;
+flex-wrap: wrap;}
+.gallery__item {position: relative; 
+  margin-left: 3px;
+  margin-right: 3px; cursor: pointer;
+  &::after {display: block;
+    content: "";
+    position: absolute;
+    top: 0;left: 0;right: 0;bottom: 0;
+  background-color: rgba($color: #000000, $alpha: 0.4);
+
+}
+ }
+ .gallery__item:hover::after {display: none;}
+.gallery__image {
+  max-height: 80px;
+  max-width: 150px;
+  
+  
+}

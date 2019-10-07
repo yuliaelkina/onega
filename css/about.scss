@@ -1,19 +1,22 @@
 .about {background-color: #dddddc;}
 .about__list {display: flex; justify-content: space-between;
-  margin-bottom: rem(30px);}
+  margin-bottom: rem(30px);
+@include phones {flex-direction: column;}}
 
 .about__item {display: flex; flex-direction: column;
   width: 50%;margin-right: 15px;
+  @include phones {width: 100%;}
 &:last-child {margin-right: 0;}
 }
-.about__img {max-width: 90%; max-height: 230px;}
+.about__img {max-width: 90%; max-height: 210px;
+  @include phones {display: none;}}
 .about__text {
-  font-size: rem(15px);
+  font-size: rem(14px);
   font-family: 'ubuntu', Arial, Helvetica, sans-serif;
   color: $black;
   line-height: 1.7;
   font-weight: 300;
-  @include small-width {font-size: rem(14px);}
+  @include small-width {font-size: rem(13px);}
 }
 
 .about__text-title {color: $blue; font-weight: 500;

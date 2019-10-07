@@ -1,5 +1,5 @@
 $blue: #2e495d;
-$black: #292726;
+$black: #1f2620;
 $green: #272c26;
 
 @import "./css/normalize.scss";
@@ -10,10 +10,12 @@ $green: #272c26;
 @import "./css/main-page.scss";
 @import "./css/header.scss";
 @import "./css/menu.scss";
+@import "./css/hamb-menu.scss";
 @import "./css/title.scss";
 @import "./css/button.scss";
 @import "./css/about.scss";
 @import "./css/gallery.scss";
 @import "./css/contacts.scss";
+@import "./css/pagination.scss";
 
 
