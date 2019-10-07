@@ -6,7 +6,7 @@
   width: 50%;margin-right: 15px;
 &:last-child {margin-right: 0;}
 }
-.about__img {max-width: 90%; max-height: 250px;}
+.about__img {max-width: 90%; max-height: 230px;}
 .about__text {
   font-size: rem(15px);
   font-family: 'ubuntu', Arial, Helvetica, sans-serif;
@@ -16,5 +16,5 @@
   @include small-width {font-size: rem(14px);}
 }
 
-.about__text-title {color: $blue;
+.about__text-title {color: $blue; font-weight: 500;
 }
