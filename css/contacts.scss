@@ -1,7 +1,7 @@
 .contacts {background-color: #dddddc;}
 .contacts__content {display: flex; 
   width: 100%;
-  height: 80%;
+  height: 90%;
 margin-bottom: 50px;
 @include phones {flex-direction: column;}}
   .contacts__text {font-family: 'ubuntu', Arial, Helvetica, sans-serif;

@@ -3,7 +3,7 @@
 }
 .gallery__list {display: flex; 
   justify-content: space-between;
-flex-wrap: wrap;}
+flex-wrap: wrap; overflow: hidden;}
 .gallery__item {position: relative; 
   margin-left: 3px;
   margin-right: 3px; cursor: pointer;
@@ -17,8 +17,8 @@ flex-wrap: wrap;}
  }
  .gallery__item:hover::after {display: none;}
 .gallery__image {
-  max-height: 80px;
-  max-width: 150px;
+  max-height: rem(80px);
+  max-width: rem(150px);
   
   
 }
