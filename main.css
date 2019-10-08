@@ -1069,7 +1069,7 @@ h1, h2, h3, h4 {
     transform: translate(-35%, -35%); }
 
 .services-page {
-  background-image: url(/images/services__bg.jpg); }
+  background-image: url(images/services__bg.jpg); }
 
 .services {
   height: initial;
@@ -1131,7 +1131,7 @@ h1, h2, h3, h4 {
   width: 90%; }
 
 .sport-page {
-  background-image: url(/images/sport_bg.jpg); }
+  background-image: url(images/sport_bg.jpg); }
 
 .sport-content {
   height: initial;
