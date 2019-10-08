@@ -1,0 +1,24 @@
+.services {height: initial;
+background: linear-gradient(#8b8581, #789884);}
+
+.services__content {margin-top: 20px;
+  display: flex;margin-bottom: 100px;
+@include phones {flex-direction: column; 
+  justify-content: flex-start;}}
+.services__list {
+  display: flex;flex-direction: column;
+}
+.services__item {width: 100%;}
+.services__name {color: #fff;
+  font-size: rem(30px);
+font-family: 'montserrat', Arial, Helvetica, sans-serif;
+font-weight: 500; margin-bottom: rem(15px);}
+.services__text {font-size: rem(16px);
+line-height: 1.5; margin-bottom: rem(15px);
+@include phones {line-height: 1.2;}}
+
+.services__price {color: #fff;
+font-weight: 500; line-height: 1.5;
+margin-bottom: rem(15px);}
+
+.services__pict {width: 90%;}

@@ -5,6 +5,7 @@
 .gallery__slider {position: relative;
   display: flex; justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
  }
   .gallery__wrap {
     overflow: hidden;
@@ -13,12 +14,12 @@
 
 .gallery__list {display: flex;
   width: 100%; }
-.gallery__item {display: flex; align-items: center; justify-content: center;
-  width: 100%; min-height: 150px; max-height: 450px;
+.gallery__item {display: flex; align-items:center; justify-content: center;
+  width: 100%; min-height: 150px; max-height: 550px;
   flex-shrink: 0;
 
 }
-.gallery__image {width: 87%; box-shadow: 8px 9px 18px #070707;
+.gallery__image {max-width: 85%; box-shadow: 8px 9px 18px #070707;
 }
 
 

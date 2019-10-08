@@ -170,7 +170,39 @@ items.forEach(function(element){
     }
     
     onePageScroll();
+    ///popup
+    let popup = document.querySelector(".popup");
+    let button = document.querySelector(".button--popup");
+
+    function addPopup() {
+      popup.classList.toggle("popup--active")
+    }
+    button.addEventListener("click", e=>{
+      e.preventDefault();addPopup()
+    } );
+    popup.addEventListener("click", e=>{
+      e.preventDefault();addPopup()
+    } );
+    //slider
+    function gallerySlider() {
+      const slider = document.querySelector(".gallery__list");
+      
+      document.querySelector(".gallery__scroll--left").addEventListener ("click", elem =>
+      {elem.preventDefault();
+      loop ("left");
+      });
+      document.querySelector(".gallery__scroll--right").addEventListener ("click", elem =>
+      {elem.preventDefault();
+      loop ("right");
+      });  };
+      
+      function loop(direction) {const slider = document.querySelector(".gallery__list");
+        if(direction === "right") {slider.appendChild(slider.firstElementChild)}
+        else {slider.insertBefore(slider.lastElementChild, slider.firstElementChild)}
+        };
     
+      
+  gallerySlider();
 
     
     //yandex map

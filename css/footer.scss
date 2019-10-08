@@ -6,15 +6,15 @@
   background-color: $green;
 color: #fff;
 @include phones {flex-direction: column;
-   align-items: center; justify-content: flex-start;}
-padding-bottom: 10px;}
+   align-items: flex-start; justify-content: flex-start;}
+padding-bottom: rem(10px);}
 .footer__text {margin-left: 20px;
   padding-top: 15px;padding-bottom: 15px;}
 .footer__contacts {
-  font-size: 13px;
+  font-size: rem(13px);
   font-weight: 200;
   margin-bottom: 10px;
 }
-.footer__rights {  font-size: 12px;
+.footer__rights {  font-size: rem(12px);
   font-weight: 200;
   opacity: 0.5;}

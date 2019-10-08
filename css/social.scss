@@ -1,4 +1,6 @@
-.social {padding-right: 20px;}
+.social {padding-right: 20px;
+@include phones {padding-right: 0;
+align-self: center;}}
 
 .social__list {
   display: flex; justify-content: center;

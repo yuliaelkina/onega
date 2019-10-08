@@ -1,0 +1,21 @@
+.popup {position: absolute;
+top: 0;left: 0;bottom: 0;right: 0;
+background-color: $black;
+display: none;}
+
+.popup__text {position: absolute;
+  width: 70%;
+top: 50%;left: 50%;
+transform: translate(-50%, -50%);
+color: $black;
+background-color: #fff;
+border-radius: 10px;
+padding: 25px;line-height: 1.8;
+@include phones {
+  width: 90%;
+  line-height: 1.4;}}
+
+.popup__title {font-size: 16px;
+font-weight: 500; margin-bottom: 15px;}
+
+.popup--active {display: block;}

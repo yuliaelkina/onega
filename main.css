@@ -434,10 +434,12 @@ button {
   position: relative;
   width: 100%;
   height: 100%;
-  overflow: hidden;
   font-family: 'ubuntu', sans-serif, Arial, Helvetica, sans-serif;
   font-size: 0.875rem;
   font-weight: 300; }
+
+.wrapper--scroll {
+  overflow: hidden; }
 
 .maincontent {
   height: 100%; }
@@ -564,6 +566,15 @@ h1, h2, h3, h4 {
   .menu__link:hover {
     text-decoration: underline; }
 
+.menu__return {
+  font-size: 18px;
+  cursor: pointer;
+  color: #fff;
+  margin-right: 25px;
+  font-weight: 500; }
+  .menu__return:hover {
+    text-decoration: underline; }
+
 .hamb-menu__button {
   position: fixed;
   top: 2.0625rem;
@@ -681,6 +692,9 @@ h1, h2, h3, h4 {
 .title--white {
   color: #fff; }
 
+.title--sport {
+  margin-top: 170px; }
+
 .button {
   background: #2e495d;
   border: #fff 1px solid;
@@ -758,6 +772,41 @@ h1, h2, h3, h4 {
   color: #2e495d;
   font-weight: 500; }
 
+.popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #1f2620;
+  display: none; }
+
+.popup__text {
+  position: absolute;
+  width: 70%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #1f2620;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  line-height: 1.8; }
+  @media screen and (max-width: 480px) {
+    .popup__text {
+      width: 90%;
+      line-height: 1.4; } }
+
+.popup__title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px; }
+
+.popup--active {
+  display: block; }
+
 .gallery {
   background: -webkit-linear-gradient(320deg, #323c38, #222922);
   background: -o-linear-gradient(320deg, #323c38, #222922);
@@ -773,7 +822,8 @@ h1, h2, h3, h4 {
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: 30px; }
 
 .gallery__wrap {
   overflow: hidden; }
@@ -796,12 +846,12 @@ h1, h2, h3, h4 {
   justify-content: center;
   width: 100%;
   min-height: 150px;
-  max-height: 450px;
+  max-height: 550px;
   -ms-flex-negative: 0;
   flex-shrink: 0; }
 
 .gallery__image {
-  width: 87%;
+  max-width: 85%;
   -webkit-box-shadow: 8px 9px 18px #070707;
   box-shadow: 8px 9px 18px #070707; }
 
@@ -902,16 +952,16 @@ h1, h2, h3, h4 {
   width: 100%;
   background-color: #272c26;
   color: #fff;
-  padding-bottom: 10px; }
+  padding-bottom: 0.625rem; }
   @media screen and (max-width: 480px) {
     .footer {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start;
       -webkit-box-pack: start;
       -ms-flex-pack: start;
       justify-content: flex-start; } }
@@ -922,17 +972,23 @@ h1, h2, h3, h4 {
   padding-bottom: 15px; }
 
 .footer__contacts {
-  font-size: 13px;
+  font-size: 0.8125rem;
   font-weight: 200;
   margin-bottom: 10px; }
 
 .footer__rights {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 200;
   opacity: 0.5; }
 
 .social {
   padding-right: 20px; }
+  @media screen and (max-width: 480px) {
+    .social {
+      padding-right: 0;
+      -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center; } }
 
 .social__list {
   display: -webkit-box;
@@ -1011,3 +1067,106 @@ h1, h2, h3, h4 {
     -webkit-transform: translate(-35%, -35%);
     -ms-transform: translate(-35%, -35%);
     transform: translate(-35%, -35%); }
+
+.services-page {
+  background-image: url(/images/services__bg.jpg); }
+
+.services {
+  height: initial;
+  background: -webkit-gradient(linear, left top, left bottom, from(#8b8581), to(#789884));
+  background: -webkit-linear-gradient(#8b8581, #789884);
+  background: -o-linear-gradient(#8b8581, #789884);
+  background: linear-gradient(#8b8581, #789884); }
+
+.services__content {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 100px; }
+  @media screen and (max-width: 480px) {
+    .services__content {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start; } }
+
+.services__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.services__item {
+  width: 100%; }
+
+.services__name {
+  color: #fff;
+  font-size: 1.875rem;
+  font-family: 'montserrat', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  margin-bottom: 0.9375rem; }
+
+.services__text {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 0.9375rem; }
+  @media screen and (max-width: 480px) {
+    .services__text {
+      line-height: 1.2; } }
+
+.services__price {
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 0.9375rem; }
+
+.services__pict {
+  width: 90%; }
+
+.sport-page {
+  background-image: url(/images/sport_bg.jpg); }
+
+.sport-content {
+  height: initial;
+  background-color: #e9dbb5; }
+
+.sport__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+  @media screen and (max-width: 480px) {
+    .sport__list {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin-bottom: 120px; } }
+
+.sport__item {
+  width: 45%;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px; }
+  @media screen and (max-width: 480px) {
+    .sport__item {
+      width: 90%; } }
+
+.sport__text {
+  padding: 10px; }

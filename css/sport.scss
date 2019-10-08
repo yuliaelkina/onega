@@ -1,0 +1,18 @@
+.sport-page {
+  background-image: url(/images/sport_bg.jpg);
+}
+.sport-content {height: initial;
+  background-color: #e9dbb5;
+}
+.sport__list {display: flex; margin-top: 20px;
+  margin-bottom: 100px;
+  flex-wrap: wrap; justify-content: space-around;
+@include phones {
+  flex-direction: column; 
+  align-items: center;
+  margin-bottom: 120px;}}
+.sport__item {width: 45%; 
+  background-color: #fff; border-radius: 10px;
+overflow: hidden; margin-bottom: 20px;
+@include phones {width: 90%;}}
+.sport__text {padding: 10px;}
