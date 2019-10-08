@@ -1,0 +1,31 @@
+.social {padding-right: 20px;}
+
+.social__list {
+  display: flex; justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.social__link {display: block;
+  margin-right: 15px;
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 20px;
+  opacity: 0.5;
+  text-align: center;
+  &:hover {opacity: 1;}
+}
+
+.social__link--fb {
+  background-image: url(./images/fb.png);
+  background-size: contain;
+}
+
+.social__link--inst {
+  background-image: url(./images/inst.png);
+  background-size: contain;
+}
+
+.social__link--vk {
+  background-image: url(./images/vk.png);
+  background-size: contain;}

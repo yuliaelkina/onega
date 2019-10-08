@@ -1,24 +1,55 @@
 .gallery {
-  background: linear-gradient(30deg, #48504d, #3d433d);
+  background: linear-gradient(130deg, #323c38, #222922);
 }
-.gallery__list {display: flex; 
-  justify-content: space-between;
-flex-wrap: wrap; overflow: hidden;}
-.gallery__item {position: relative; 
-  margin-left: 3px;
-  margin-right: 3px; cursor: pointer;
-  &::after {display: block;
-    content: "";
-    position: absolute;
-    top: 0;left: 0;right: 0;bottom: 0;
-  background-color: rgba($color: #000000, $alpha: 0.4);
+
+.gallery__slider {position: relative;
+  display: flex; justify-content: center;
+  align-items: center;
+ }
+  .gallery__wrap {
+    overflow: hidden;
+    
+  }
+
+.gallery__list {display: flex;
+  width: 100%; }
+.gallery__item {display: flex; align-items: center; justify-content: center;
+  width: 100%; min-height: 150px; max-height: 450px;
+  flex-shrink: 0;
 
 }
- }
- .gallery__item:hover::after {display: none;}
-.gallery__image {
-  max-height: rem(80px);
-  max-width: rem(150px);
-  
-  
+.gallery__image {width: 87%; box-shadow: 8px 9px 18px #070707;
+}
+
+
+
+.gallery__scroll {position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.gallery__scroll--left {
+  width: rem(20px);
+height: rem(40px);
+background-image: url(images/left.png);
+margin-left: 20px;
+@include phones {margin-left: 5px;
+  width: rem(10px);
+  height: rem(20px);background-size: cover;}
+}
+
+
+.gallery__scroll--right {
+  transform: rotate(180deg);
+  width: rem(20px);
+  height: rem(40px);
+  background-image: url(images/left.png);
+  margin-right: 20px;
+@include phones {margin-right: 5px;
+  width: rem(10px);
+  height: rem(20px);
+  background-size: cover;}
 }

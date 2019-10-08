@@ -62,7 +62,7 @@ items.forEach(function(element){
         setTimeout(() => {
           inScroll = false;
           addClass(points);
-        }, 900);
+        }, 700);
         
         function addClass(arr){
           arr[pageNumber].classList.add('is-active');
