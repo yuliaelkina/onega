@@ -43,6 +43,8 @@ items.forEach(function(element){
       const dataScrollto = document.querySelectorAll('[data-scroll-to]');
       
       let inScroll = false;
+    
+      if(isMobileDevice()){swipe()}
       
       addNavigation();
       wheel();
@@ -62,7 +64,7 @@ items.forEach(function(element){
         setTimeout(() => {
           inScroll = false;
           addClass(points);
-        }, 700);
+        }, 900);
         
         function addClass(arr){
           arr[pageNumber].classList.add('is-active');
@@ -135,8 +137,8 @@ items.forEach(function(element){
           let numPage = page.iterIndex - 1;
           doTransition(numPage);
         }
-      }     
-    function swipe() {
+      } 
+      function swipe() {
         let touchStartY = 0;
         let touchEndY = 0;
         const wrapper = document.querySelector(".wrapper");
@@ -153,7 +155,7 @@ items.forEach(function(element){
           let direct = swipeDirect();
           scrollToPage(direct);
         }, false);
-      }
+     
       function swipeDirect () {
         let deltaY = touchStartY - touchEndY;
         if(deltaY > 100) {
@@ -163,13 +165,16 @@ items.forEach(function(element){
           return 'down';
         }
       }
-    
+     }
       function isMobileDevice() {
         return (typeof window.orientation !== undefined);
       }
+    
     }
     
     onePageScroll();
+    
+    
     ///popup
     let popup = document.querySelector(".popup");
     let button = document.querySelector(".button--popup");
