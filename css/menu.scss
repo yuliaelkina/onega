@@ -1,6 +1,8 @@
 .menu {color: #fff;
   @include phones {display: none;}
 }
+
+.menu--return {@include phones {display: block; font-size: 16px;}}
 .menu__list {
   display: flex;
 }
